@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google landingpage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Google Landing page</title>
+    <link rel="shortcut icon" href="./images/gfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
-    <header>
-        <nav class="header-left">
-           <a href="#" class="header-links">About</a>
-           <a href="#" class="header-links">Store</a>
-        </nav>
-        <nav class="header-right">
-            <a href="#" class="header-links">Gmail</a>
-            <a href="#" class="header-links">Images</a>
-            <img src="appicon.png" alt="appicon" id="appicon" class="header-links">
-            <button class="header-links" id="sign_in_btn"> Sign in</button>
-        </nav>
-        <div class="clear"></div> </div>
+    <header class="header">
+        <ul class="header__left">
+            <li><a href="">About </a></li>
+            <li><a href="">Store</a></li>
+        </ul>
+        <ul class="header__right">
+            <li><a href="">Gmail</a></li>
+            <li><a href="">Images</a></li>
+            <li>
+                <img class="header__right--appicon" src="./images/appicon.png" alt="Application Ican"> 
+            </li>
+            <li>
+                <button class="header__right--button" type="button">Sign In</button>
+            </li> 
+        </ul>
     </header>
-    
-    <div class="googleimg">
-        <img src="googlelogo.png" alt="googlelogo" id="google_logo">
-    </div>
-    <div class="search">
-        <input type="search" name="Search" id="Search">
-        <img src="Magnifying_glass_icon.png" alt="Magnifying_glass_icon" id="magnify">
-        <a href="#" > <img src="google_microphone.png" alt="google_microphone" id="google_mic"></a>
-    </div>
-    <div>
-        <button class="button1">Google Search </button>
-        <button class="button2">I'm Feeling Lucky</button>
-    </div>
-    <div class="lan">
-        <p>Other Languages you can use Google: <a href="#">English</a></p>
-    </div>
-    <footer>
-        <div class="country">Finland</div>
-        <nav class="footer-left">
-            <a href="#" class="footer-links">Advertising</a>
-            <a href="#" class="footer-links">Business</a>
-            <a href="#" class="footer-links"> How Search Works</a>
-        </nav>
-        <nav class="footer-right">
-            <a href="#" class="footer-links">Privacy</a>
-            <a href="#" class="footer-links">Terms</a>
-            <a href="#" class="footer-links">Setting</a>
-        </nav>
+    <div class="clear"></div>
+
+    <main class="main">
+        <img class="main__logo" src="./images/googlelogo.png" alt="Logo">
+        <div class="main__search-bar">
+            <img class="main__search-bar--magnifier" src="./images/magnifying_glass.jpg" alt="Magnif">
+            <input class="main__search-bar--input" type="search">
+            <a href=""> <img class="main__search-bar--mic" src="./images/google_microphone.png" alt="Microphone"></a>
+        </div>
+
+        <div class="main__buttons">
+            <button class="main__button--left">Google Search</button>
+            <button class="main__button--right"> I'm Feeling Lucky</button>
+        </div>
+        <div>
+            <p class="main__language">Other Languages you can use:
+                <a href="">English</a>
+            </p>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__country">Finland</div>
+        <div class="footer__bottom">
+            <ul class="footer__bottom--left">
+                <li><a href=""></a>Advertising </li>
+                 <li> <a href=""></a> Business</li>  
+               <li> <a href=""></a> How Search Works</li>
+            
+            </ul>
+            <ul class="footer__bottom--right">
+                <li><a href=""></a> Privacy</li>
+                <li><a href=""></a>Terms</li>
+                <li><a href=""></a>Settings</li>
+
+
+            </ul>
+
+        </div>
     </footer>
 
-    </div>
 </body>
 </html>
